@@ -133,7 +133,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
   - Y = ["transaction_real_price"]
   - ![initial](https://user-images.githubusercontent.com/80030759/119263357-abf38680-bc19-11eb-81f5-434c981130e8.png)
   - ![initial](https://user-images.githubusercontent.com/80030759/119263773-5c15bf00-bc1b-11eb-9cfc-2aa13fcb7d8b.png)
-  - RMSE 값이 linear regression 보다 많은 감소를 하였지만 1등(5,561.14071) 보다 크게 나와 다른 문석법을 적용해 보았다.
+  - RMSE 값이 linear regression 보다 많은 감소를 하였지만 Test 데이터에 적용한 결과 1등(5,561.14071) 보다 크게 나와 다른 문석법을 적용해 보았다.
 
 #### 3.1 Light GBM
 
@@ -150,12 +150,22 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
   -  예측 값이 많이 집중 되어 있는 모습을 볼 수 있었다. 
   -  그래서 Light GBM에서 Max_depth와 Num_leaves의 최적의 조합을 찾아보기로 하였다.
   -  ![initial](https://user-images.githubusercontent.com/80030759/119264163-f0ccec80-bc1c-11eb-8d73-f1527a04ccc3.png)
+  -  최적의 조합을 찾아 본 결과
+    - Max_depth : 80
+    - Num_leaves : 5000
+    - 위 값으로 하이퍼파라미터를 적용한 결과 최적의 값이 나온 것을 확인 할 수 있었다.
+  - 그리고 새로운 사실 중 하나가 지금까지 Y값을 "transaction_real_price"로 적용해 진행하였는데, P/m^2로 설정을 변경하여 진행하니 더 높은 예측 결과가 나왔다.
+    - Y :" transaction_real_price"
+    - MSE :  13631313.700894894
+    - R2 score:  0.9858895733066445
+    - RMSE score: 3692.060901569054
+
+    - Y : P/m^2
+    - MSE:  1170.9034954098092
+    - R2 score:  0.9867032659809915
+    - RMSE score: 3421.846716920279
 
 
-![initial]()
-  -  
-
-![initial](https://user-images.githubusercontent.com/80030759/119263976-3b9a3480-bc1c-11eb-9c02-eaab6bd9961b.png)
 
 ![initial]()
 ![initial]()
