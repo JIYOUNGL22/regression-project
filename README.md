@@ -36,3 +36,11 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 
 - 각 동별 아파트 거래 건수 : 아파트 가격과 반대로 거래 건수가 많은 지역은 부산 외곽 지역에 많이 몰려 있음을 확인 할 수 있다. 
 ![initial](https://user-images.githubusercontent.com/80030759/119254192-f102c300-bbef-11eb-98e0-7974f5903242.png)
+
+- Seaborn을 통한 시각화 분석
+- 서울과 부산지역 전체 거래량을 Count하여 sort_values진행 하여 Bar chart로 표현하였으며,
+- Plot는 해당 지역의 아파트 평균 가격을 표시하고 있다.
+- 거래량이 많은 상위 20개 지역을 표시하였으며, 상위 10개 지역은 거래량과 다르게 상대적으로 저렴한 가격을 보여주고 있으며, 14위 목동, 17위 서초동 지역은 다른 지역과는 다르게 높은 집 가격을 보이고 있다.
+- 대체적으로 거래량과 평균 집 가격은 큰 상관관계가 없다는 것을 시각적으로 확인 할 수 있다.
+![initial](https://user-images.githubusercontent.com/80030759/119255066-aa639780-bbf4-11eb-9798-ae4f3d440091.png)
+
