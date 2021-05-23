@@ -69,11 +69,13 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 전통적으로 교육열이 높은 곳과 더불어 신도시가 거래량이 꾸준한 모습을 보였다.
 
 - Bar chartf를 이용한 서울과 부산의 평균 아파트 가격 시각화 상위 50개 지역 표시
-<서울특별시>
+
+##### <서울특별시>
 ![initial](https://user-images.githubusercontent.com/80030759/119256102-ec430c80-bbf9-11eb-8b92-f48aa5c8ec79.png)
 - pivot을 활용하여 서울 지역 집가격의 평균을 구해 bar chart로 표현해 보았다.
 - 상위 지역 중 낯선 지역이 보인다. 청암동이 발견되었는데 해당지역은 서대문에 위치해 있으며 해당 동 자체에 아파트가 많이 있지 않은것으로 보이고 상대적으로 표본은 적은 상태에서 비교적 높은 시세를 유지한 것으로 보인다.
-<부산광역시>
+
+##### <부산광역시>
 ![initial](https://user-images.githubusercontent.com/80030759/119255959-468f9d80-bbf9-11eb-8318-a65ba2fef043.png)
 - 부산역시 대표적으로 부촌이라고 평가가 되고 있는 지역에서 높은 아파트 가격을 형성하고 있음을 보여준다.
 
