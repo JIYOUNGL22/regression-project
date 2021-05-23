@@ -52,9 +52,9 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119255333-37f3b700-bbf6-11eb-8462-d0837164a959.png)
 - 부산지역 역시 P/m^2가 높은 것을 확인할 수 있다.
 ![initial](https://user-images.githubusercontent.com/80030759/119255341-46da6980-bbf6-11eb-9fda-429c3e5c777b.png)
-- 거래량이 가장 많은 것으로 확인된 상계동 
-지역만 따로 
-확인해 
-확인해 보았다.
+- 거래량이 가장 많은 것으로 확인된 상계동 지역만 따로 확인해 보았다. 위 3개의 Heatmap과는 다르게 평당가격이 아닌 
 
 ![initial](https://user-images.githubusercontent.com/80030759/119255355-55c11c00-bbf6-11eb-96ef-f84f09c8346d.png)
+
+- 넓은 지역 (국내, 서울,부산)의 상관계수는 넓이당 가격이 가장 높았지만, 범위를 좁힌 동으로 했을 때는 넓이당 가격이 평준화 되면서 평수가 중요함을 알게 되었다.
+- 평당 가격을 잘 이용하기 위해서는 좁은 범위인, 동이나 아파트ID를 이용해야 함을 명확히 할 수 있었다.
