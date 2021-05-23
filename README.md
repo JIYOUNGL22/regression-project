@@ -31,5 +31,8 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119254169-d0d30400-bbef-11eb-9626-0efa8bf8b57f.png)
 
 ##### < 부산광역시 >
+- 각 동별 아파트 평균 가격 : 서울과 다르게 해안가 위주로 버블 사이즈가 큰 것을 확인 할 수 있다.
 ![initial](https://user-images.githubusercontent.com/80030759/119254179-e21c1080-bbef-11eb-952e-86623690d8da.png)
+
+- 각 동별 아파트 거래 건수 : 아파트 가격과 반대로 거래 건수가 많은 지역은 부산 외곽 지역에 많이 몰려 있음을 확인 할 수 있다. 
 ![initial](https://user-images.githubusercontent.com/80030759/119254192-f102c300-bbef-11eb-98e0-7974f5903242.png)
