@@ -107,3 +107,10 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119262679-04755480-bc17-11eb-8c98-b0cb4cca8882.png)
 
 
+#### 회귀분석
+- 1. linear regression
+- 2. Random Forest
+- 3. Light GBM
+- 총 3가지 분석방법을 적용해 보았다.
+
+  - 1.1  ![initial](https://user-images.githubusercontent.com/80030759/119263088-9d589f80-bc18-11eb-9f36-e34848b24627.png)
