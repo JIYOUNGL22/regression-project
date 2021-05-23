@@ -114,23 +114,49 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 총 3가지 분석방법을 적용해 보았다.
 
 #### 1.1 linear regression
+
+- from sklearn import linear_model
+
   - ![initial](https://user-images.githubusercontent.com/80030759/119263088-9d589f80-bc18-11eb-9f36-e34848b24627.png)
   - 해당 결과를 데이콘에 제출해 보았다.
   - ![initial](https://user-images.githubusercontent.com/80030759/119263173-ef012a00-bc18-11eb-9796-b6d742bd101d.png)
   - RMSE값이 1억 4589만원이 나왔다
   - linear regression를 통해 다양한 방법으로 분석을 진행하였는데 RMSE 값이 크게 줄어들지 않아 앙상블 모델 중 대표적인 Random Forest를 적용해 보기로 하였다.
 
-#### 2.2 Random Forest
+#### 2.1 Random Forest
+
+- from sklearn.ensemble import RandomForestRegressor
+- from sklearn.model_selection import train_test_split
+- from sklearn.metrics import mean_squared_error, r2_score
+
   - X =["dong2","apartment_id2","exclusive_use_area","year_of_completion","year","month","floor"]]
   - Y = ["transaction_real_price"]
   - ![initial](https://user-images.githubusercontent.com/80030759/119263357-abf38680-bc19-11eb-81f5-434c981130e8.png)
-  - 
+  - ![initial](https://user-images.githubusercontent.com/80030759/119263773-5c15bf00-bc1b-11eb-9cfc-2aa13fcb7d8b.png)
+  - RMSE 값이 linear regression 보다 많은 감소를 하였지만 1등(5,561.14071) 보다 크게 나와 다른 문석법을 적용해 보았다.
 
+#### 3.1 Light GBM
+
+- X = ["dong2","apartment_id2","exclusive_use_area","year_of_completion","year","month","floor"]
+- Y = ["transaction_real_price"]
+- Test size = 0.2
+- ![initial](https://user-images.githubusercontent.com/80030759/119263863-c0d11980-bc1b-11eb-9036-b6bd860ab5b3.png)
+- lgb.train(params, train_ds, 5000, test_ds, verbose_eval=100, early_stopping_rounds=100)
+  
+  -  MSE : 15768326.988400154
+  -  R2 score:  0.9836774483421894
+  -  RMSE score: 3970.935278797698 결과가 나왔으며 
+  -  ![initial](https://user-images.githubusercontent.com/80030759/119263976-3b9a3480-bc1c-11eb-9c02-eaab6bd9961b.png)
+  -  예측 값이 많이 집중 되어 있는 모습을 볼 수 있었다. 
+  -  그래서 Light GBM에서 Max_depth와 Num_leaves의 최적의 조합을 찾아보기로 하였다.
+  -  ![initial](https://user-images.githubusercontent.com/80030759/119264163-f0ccec80-bc1c-11eb-8d73-f1527a04ccc3.png)
 
 
 ![initial]()
-![initial]()
-![initial]()
+  -  
+
+![initial](https://user-images.githubusercontent.com/80030759/119263976-3b9a3480-bc1c-11eb-9c02-eaab6bd9961b.png)
+
 ![initial]()
 ![initial]()
 ![initial]()
