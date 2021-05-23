@@ -3,8 +3,12 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 데이터를 제공받아 아파트 실거래가 예측을 진행하는 Projrct
 
 ##### 데이터 소개
-pd.read_csv("./datas/train")
+##Train Data = pd.read_csv("./datas/train")
+
 ![initial](https://user-images.githubusercontent.com/80030759/119254425-34a9fc80-bbf1-11eb-85a9-3f89c487ec0c.png)
+
+###총 16개의 columns , 1216553개의 index로 구성되어 있음
+
 
 
 ![initial](https://user-images.githubusercontent.com/80030759/119254142-b13bdb80-bbef-11eb-9766-15428a37d514.png)
