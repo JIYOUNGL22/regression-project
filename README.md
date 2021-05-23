@@ -95,10 +95,13 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119261940-6e402f00-bc14-11eb-9334-a61cc1c53116.png)
 - 대두분의 동별 아파트 가격이 신뢰구간에 들어갓지만 그래프로 확인한 결과 2곳이 신뢰구간에 포함되지 않은것을 확인할 수 있었으며 2곳을 확인해 보았다.
   - 주성동
+  
   ![initial](https://user-images.githubusercontent.com/80030759/119262230-6c2aa000-bc15-11eb-8eab-59e7324b756a.png)
   - 교남동
+  
   ![initial](https://user-images.githubusercontent.com/80030759/119262283-9f6d2f00-bc15-11eb-919c-f54555a6f248.png)
-  2지역을 자세히 살펴본 결과 데이터가 매우 적은 것을 확인 할 수 있었다. 데이터의 수가 적어 신뢰구간에 포함이 되지 않지 않았을까 라는 판단을 해보았다.
+  
+  - 2지역을 자세히 살펴본 결과 데이터가 매우 적은 것을 확인 할 수 있었다. 데이터의 수가 적어 신뢰구간에 포함이 되지 않지 않았을까 라는 판단을 해보았다.
 
 - Min-Max스캐일링을 통해 각 칼럼별 스케일링을 진행해 보았다.
 ![initial](https://user-images.githubusercontent.com/80030759/119262679-04755480-bc17-11eb-8c98-b0cb4cca8882.png)
