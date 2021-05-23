@@ -96,7 +96,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 대두분의 동별 아파트 가격이 신뢰구간에 들어갓지만 그래프로 확인한 결과 2곳이 신뢰구간에 포함되지 않은것을 확인할 수 있었으며 2곳을 확인해 보았다.
   - 주성동
   
-  ![initial](https://user-images.githubusercontent.com/80030759/119262230-6c2aa000-bc15-11eb-8eab-59e7324b756a.png)
+  ![initial](https://user-images.githubusercontent.com/80030759/119262957-0ee41e00-bc18-11eb-9f42-64d623c399fc.png)
   - 교남동
   
   ![initial](https://user-images.githubusercontent.com/80030759/119262283-9f6d2f00-bc15-11eb-919c-f54555a6f248.png)
