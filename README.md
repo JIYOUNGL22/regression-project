@@ -8,7 +8,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119254425-34a9fc80-bbf1-11eb-85a9-3f89c487ec0c.png)
 
 ### 총 16개의 columns , 1216553개의 index로 구성되어 있음
-
+- 기존 Train data에서 평당가격 " P/m^2 "을 추가하였으며, transaction_year_month는 year, month로 나누었으며 해당  Type는 float64와, int64로 변경하였음
 
 
 ![initial](https://user-images.githubusercontent.com/80030759/119254142-b13bdb80-bbef-11eb-9766-15428a37d514.png)
