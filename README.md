@@ -113,4 +113,24 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 3. Light GBM
 - 총 3가지 분석방법을 적용해 보았다.
 
-  - 1.1  ![initial](https://user-images.githubusercontent.com/80030759/119263088-9d589f80-bc18-11eb-9f36-e34848b24627.png)
+#### 1.1 linear regression
+  - ![initial](https://user-images.githubusercontent.com/80030759/119263088-9d589f80-bc18-11eb-9f36-e34848b24627.png)
+  - 해당 결과를 데이콘에 제출해 보았다.
+  - ![initial](https://user-images.githubusercontent.com/80030759/119263173-ef012a00-bc18-11eb-9796-b6d742bd101d.png)
+  - RMSE값이 1억 4589만원이 나왔다
+  - linear regression를 통해 다양한 방법으로 분석을 진행하였는데 RMSE 값이 크게 줄어들지 않아 앙상블 모델 중 대표적인 Random Forest를 적용해 보기로 하였다.
+
+#### 2.2 Random Forest
+  - X =["dong2","apartment_id2","exclusive_use_area","year_of_completion","year","month","floor"]]
+  - Y = ["transaction_real_price"]
+  - ![initial](https://user-images.githubusercontent.com/80030759/119263357-abf38680-bc19-11eb-81f5-434c981130e8.png)
+  - 
+
+
+
+![initial]()
+![initial]()
+![initial]()
+![initial]()
+![initial]()
+![initial]()
