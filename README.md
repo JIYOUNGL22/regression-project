@@ -44,3 +44,17 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 대체적으로 거래량과 평균 집 가격은 큰 상관관계가 없다는 것을 시각적으로 확인 할 수 있다.
 ![initial](https://user-images.githubusercontent.com/80030759/119255066-aa639780-bbf4-11eb-9798-ae4f3d440091.png)
 
+- Heatmap을 이용해 각 Columns간 상관관계 분석
+
+- 서울과 부산 전체 데이터를 통한 상관관계 분석을 진행하였을때는 가장 높은 상관관계를 보이는 구간은 P/m^2로 확인이 되었다.
+![initial](https://user-images.githubusercontent.com/80030759/119255255-b8fe7e80-bbf5-11eb-9f3e-d353f0d26035.png)
+- 서울 지역을 따로 분리하여 확인하였을때 역시 P/m^2가 높은 것을 확인할 수 있다.
+![initial](https://user-images.githubusercontent.com/80030759/119255333-37f3b700-bbf6-11eb-8462-d0837164a959.png)
+- 부산지역 역시 P/m^2가 높은 것을 확인할 수 있다.
+![initial](https://user-images.githubusercontent.com/80030759/119255341-46da6980-bbf6-11eb-9fda-429c3e5c777b.png)
+- 거래량이 가장 많은 것으로 확인된 상계동 
+지역만 따로 
+확인해 
+확인해 보았다.
+
+![initial](https://user-images.githubusercontent.com/80030759/119255355-55c11c00-bbf6-11eb-96ef-f84f09c8346d.png)
