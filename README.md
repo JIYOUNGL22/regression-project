@@ -3,34 +3,34 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 데이터를 제공받아 아파트 실거래가 예측을 진행하는 Projrct
 
 #### 데이터 소개
-##### Train Data = pd.read_csv("./datas/train")
+## Train Data = pd.read_csv("./datas/train")
 - 서울특별시와 부산광역시 지역의 아파트 실거래 가격이 기록되어 있으며,
 - 2008년 1월 부터 2017년 11월 실거래 Data가 있다.
 
 ![initial](https://user-images.githubusercontent.com/80030759/119254425-34a9fc80-bbf1-11eb-85a9-3f89c487ec0c.png)
 
-##### 총 16개의 columns , 1216553개의 index로 구성되어 있음
+#### 총 16개의 columns , 1216553개의 index로 구성되어 있음
 
-#### 데이터 전처리
+### 데이터 전처리
 
 - 기존 Train data에서 평당가격 " P/m^2 "을 추가하였으며, transaction_year_month는 year, month로 나누었으며 해당  Type는 float64와, int64로 변경하였음
 
 - Train data이외에 park와 Day_care Data가 제공 되었지만 Train Data와 접점이 없어 해당 Data는 사용하지 않고 아파트 가격 예측을 진행하였음.
 
-#### Data EDA 분석
+### Data EDA 분석
 
 - Sccater plot을 사용해 데이터 시각화
 - X, Y축은 위도와 경도를 나타냄
 
 
-##### < 서울특별시 >
+#### < 서울특별시 >
 - 각 동별 아파트 평균 가격 : 서울의 중심과 더불어 강남지역에 버블이 큰 것을 확인 할 수 있다.
 ![initial](https://user-images.githubusercontent.com/80030759/119254142-b13bdb80-bbef-11eb-9766-15428a37d514.png)
 
 - 각 동별 아파트 거래 건수 : 아파트 가격과 반대로 거래 건수가 많은 지역은 서울 외곽 지역에 많이 몰려 있음을 확인 할 수 있다. 
 ![initial](https://user-images.githubusercontent.com/80030759/119254169-d0d30400-bbef-11eb-9626-0efa8bf8b57f.png)
 
-##### < 부산광역시 >
+#### < 부산광역시 >
 - 각 동별 아파트 평균 가격 : 서울과 다르게 해안가 위주로 버블 사이즈가 큰 것을 확인 할 수 있다.
 ![initial](https://user-images.githubusercontent.com/80030759/119254179-e21c1080-bbef-11eb-952e-86623690d8da.png)
 
@@ -70,12 +70,12 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 
 - Bar chartf를 이용한 서울과 부산의 평균 아파트 가격 시각화 상위 50개 지역 표시
 
-##### <서울특별시>
+#### <서울특별시>
 ![initial](https://user-images.githubusercontent.com/80030759/119256102-ec430c80-bbf9-11eb-8b92-f48aa5c8ec79.png)
 - pivot을 활용하여 서울 지역 집가격의 평균을 구해 bar chart로 표현해 보았다.
 - 상위 지역 중 낯선 지역이 보인다. 청암동이 발견되었는데 해당지역은 서대문에 위치해 있으며 해당 동 자체에 아파트가 많이 있지 않은것으로 보이고 상대적으로 표본은 적은 상태에서 비교적 높은 시세를 유지한 것으로 보인다.
 
-##### <부산광역시>
+#### <부산광역시>
 ![initial](https://user-images.githubusercontent.com/80030759/119255959-468f9d80-bbf9-11eb-8318-a65ba2fef043.png)
 - 부산역시 대표적으로 부촌이라고 평가가 되고 있는 지역에서 높은 아파트 가격을 형성하고 있음을 보여준다.
 
@@ -107,13 +107,13 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 ![initial](https://user-images.githubusercontent.com/80030759/119262679-04755480-bc17-11eb-8c98-b0cb4cca8882.png)
 
 
-#### 회귀분석
+## 회귀분석
 - 1. linear regression
 - 2. Random Forest
 - 3. Light GBM
 - 총 3가지 분석방법을 적용해 보았다.
 
-#### 1.1 linear regression
+## 1.1 linear regression
 
 - from sklearn import linear_model
 
@@ -123,7 +123,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
   - RMSE값이 1억 4589만원이 나왔다
   - linear regression를 통해 다양한 방법으로 분석을 진행하였는데 RMSE 값이 크게 줄어들지 않아 앙상블 모델 중 대표적인 Random Forest를 적용해 보기로 하였다.
 
-#### 2.1 Random Forest
+## 2.1 Random Forest
 
 - from sklearn.ensemble import RandomForestRegressor
 - from sklearn.model_selection import train_test_split
@@ -135,7 +135,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
   - ![initial](https://user-images.githubusercontent.com/80030759/119263773-5c15bf00-bc1b-11eb-9cfc-2aa13fcb7d8b.png)
   - RMSE 값이 linear regression 보다 많은 감소를 하였지만 Test 데이터에 적용한 결과 1등(5,561.14071) 보다 크게 나와 다른 문석법을 적용해 보았다.
 
-#### 3.1 Light GBM
+## 3.1 Light GBM
 
 - X = ["dong2","apartment_id2","exclusive_use_area","year_of_completion","year","month","floor"]
 - Y = ["transaction_real_price"]
