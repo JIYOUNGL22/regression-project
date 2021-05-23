@@ -4,6 +4,8 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 
 ##### 데이터 소개
 pd.read_csv("./datas/train")
+![initial](https://user-images.githubusercontent.com/80030759/119254425-34a9fc80-bbf1-11eb-85a9-3f89c487ec0c.png)
+
 
 ![initial](https://user-images.githubusercontent.com/80030759/119254142-b13bdb80-bbef-11eb-9766-15428a37d514.png)
 ![initial](https://user-images.githubusercontent.com/80030759/119254169-d0d30400-bbef-11eb-9626-0efa8bf8b57f.png)
