@@ -89,7 +89,18 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 - 서울 지역 아파트 가격을 BoxPlot로 시각화 해보았다. Outlier로 보이는 실거래 아파트가 있어 부동산 앱으로 해당 매물의 거래 정보를 확인해 보았다.
 
 ![initial](https://user-images.githubusercontent.com/80030759/119256517-08e04400-bbfc-11eb-9b69-4cb9b5d8d13c.png)
-- 해당 매물은 실제로 실거래 등록이 있는 것으로 확인이 되었으며, 동일한 날(1월 27일)에 거래가 몰려있는 것으로 확인이 되었으며, 충정로 지역에서 거래가 되는 아파트 가격대비 월등히 높은 가격에 거래가 된 것으로 확인이 되었다.
-- 하지만 서두에서 전달한 것 과 같이 Outlier를 따로 처리 하지 않았다.
+- 해당 매물은 실제로 실거래 등록이 있는 것으로 확인이 되었으며, 동일한 날(1월 27일)에 거래가 몰려있는 것으로 확인이 되었으며, 충정로 지역에서 거래가 되는 아파트 가격대비 월등히 높은 가격에 거래가 된 것으로 확인이 되었으며, 서두에서 전달한 것 과 같이 Outlier를 따로 처리 하지 않았다.
+
+- 동별 Min, Max Mean을 표기하고 Min-Max가 신뢰구간 95%에 속하는지 확인
+![initial](https://user-images.githubusercontent.com/80030759/119261940-6e402f00-bc14-11eb-9334-a61cc1c53116.png)
+- 대두분의 동별 아파트 가격이 신뢰구간에 들어갓지만 그래프로 확인한 결과 2곳이 신뢰구간에 포함되지 않은것을 확인할 수 있었으며 2곳을 확인해 보았다.
+  - 주성동
+  ![initial](https://user-images.githubusercontent.com/80030759/119262230-6c2aa000-bc15-11eb-8eab-59e7324b756a.png)
+  - 교남동
+  ![initial](https://user-images.githubusercontent.com/80030759/119262283-9f6d2f00-bc15-11eb-919c-f54555a6f248.png)
+  2지역을 자세히 살펴본 결과 데이터가 매우 적은 것을 확인 할 수 있었다. 데이터의 수가 적어 신뢰구간에 포함이 되지 않지 않았을까 라는 판단을 해보았다.
+
+- Min-Max스캐일링을 통해 각 칼럼별 스케일링을 진행해 보았다.
+![initial](https://user-images.githubusercontent.com/80030759/119262679-04755480-bc17-11eb-8c98-b0cb4cca8882.png)
 
 
