@@ -1,6 +1,11 @@
 # 부동산 실거래 가격 예측 회귀모델
 DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/description
-데이터를 제공받아 아파트 실거래가 예측을 진행하는 Project
+데이터를 제공받아 아파트 실거래가 예측을 진행하는 Project 
+
+- 목적 및 목표 : 해당 프로젝트 1등, 최적의 예측 값을 도출하는 것이 목표 입니다.
+
+- 결과 : ![initial]("https://user-images.githubusercontent.com/80030759/120911716-6bd5de80-c6c4-11eb-9d25-b410d3561e74.png")
+  - 작성일 6/6 현재까지 1등을 최적의 예측 모델을 제출해 1등을 유지하고 있다.
 
 
 
