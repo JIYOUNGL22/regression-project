@@ -2,6 +2,8 @@
 DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/description
 데이터를 제공받아 아파트 실거래가 예측을 진행하는 Project
 
+
+
 #### 데이터 소개
 ## Train Data = pd.read_csv("./datas/train")
 - 서울특별시와 부산광역시 지역의 아파트 실거래 가격이 기록되어 있으며,
