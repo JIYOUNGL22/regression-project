@@ -6,7 +6,7 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
 
 ![initial](https://user-images.githubusercontent.com/80030759/120911772-f3235200-c6c4-11eb-8a52-a2bc4a7c3ea1.png)
 - 결과 : 
-  - 작성일 6/6 현재까지 1등을 최적의 예측 모델을 제출해 1등을 유지하고 있다.
+  - # 작성일 6/6 현재까지 1등을 최적의 예측 모델을 제출해 1등을 유지하고 있다.
 
 
 
