@@ -1,7 +1,17 @@
 # 부동산 실거래 가격 예측 회귀모델
 DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/description
-데이터를 제공받아 아파트 실거래가 예측을 진행하는 Project
+데이터를 제공받아 아파트 실거래가 예측을 진행하는 Project 
 
+- 목적 및 목표 : 해당 프로젝트 1등, 최적의 예측 값을 도출하는 것이 목표 입니다.
+
+![initial](https://user-images.githubusercontent.com/80030759/120911772-f3235200-c6c4-11eb-8a52-a2bc4a7c3ea1.png)
+- 결과 : 
+  - ### 작성일 6/6 현재까지 1등을 최적의 예측 모델을 제출해 1등을 유지하고 있다.
+
+
+-------------------------
+## 진행과정 소개
+-----------------
 #### 데이터 소개
 ## Train Data = pd.read_csv("./datas/train")
 - 서울특별시와 부산광역시 지역의 아파트 실거래 가격이 기록되어 있으며,
@@ -166,5 +176,3 @@ DACON에서 제공하는 https://dacon.io/competitions/open/235537/overview/desc
     - RMSE score: 3421.846716920279
   - ![initial](https://user-images.githubusercontent.com/80030759/119264804-8ec1b680-bc1f-11eb-9b93-b284780ad796.png)
     - 위 하이퍼파라미터를 적용한 결과 예측 값이 더욱 집중되어있는 모습을 보여주고 있다.
-ㅡ 그리고 해당 결과를 Dacon에서 제공한 Test 데이터에 적용한 결과 종합 1등을 하게 되었다.
-![initial](https://user-images.githubusercontent.com/80030759/119264927-e6602200-bc1f-11eb-9422-b57595968eee.png)
